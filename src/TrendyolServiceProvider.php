@@ -56,10 +56,15 @@ class TrendyolServiceProvider extends ServiceProvider
      */
     private function registerTrendyolService()
     {
+
+        $beforeSingle = function (OrderList $array) {
+            event(new Services\Orders\OrderList($array));
+        };
         
         $this->app->singleton('trendyol', function ($app) {
             return new TrendyolService(
-                $app->make(Clients\TrendyolClientInterface::class)            
+                $app->make(Clients\TrendyolClientInterface::class),
+                $beforeSingle       
             );
         });
     }
