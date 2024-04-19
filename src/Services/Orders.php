@@ -2,9 +2,7 @@
 
 namespace BahriCanli\Trendyol\Services;
 
-
-
-class OrderList {
+class Orders {
 
     function OrderList($array) {
 
