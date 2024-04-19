@@ -27,6 +27,7 @@ class TrendyolServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->registerTrendyolClient();
+        $this->registerTrendyolService();
     }
 
     /**
