@@ -48,7 +48,7 @@ Register the Trendyol alias to your application.
 This registration is not optional because the channel itself uses this very alias.
 
 ```php
-'Trendyol' => BahriCanli\Trendyol\Trendyol::class,
+'Trendyol' => BahriCanli\Trendyol\Facades\Trendyol::class,
 ```
 
 ### Setting up the Trendyol service
