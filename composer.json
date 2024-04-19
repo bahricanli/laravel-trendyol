@@ -1,0 +1,59 @@
+{
+    "name": "bahricanli/laravel-trendyol",
+    "description": "Laravel Trendyol API",
+    "homepage": "https://github.com/bahricanli/laravel-trendyol",
+    "version": "1.0.0",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bahri Meriç Canlı",
+            "email": "bahri@bahri.info",
+            "homepage": "https://www.bahri.info",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7",
+        "bahricanli/trendyol-php-api": "dev-master",
+        "illuminate/notifications": "8.*",
+        "illuminate/queue": "8.*",
+        "illuminate/support": "8.*"
+    },
+    "require-dev": {
+        "mockery/mockery": "^0.9.5",
+        "phpunit/phpunit": "4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "BahriCanli\\Trendyol\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BahriCanli\\Trendyol\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+	"laravel": {
+            "providers": [
+                "BahriCanli\\Trendyol\\TrendyolServiceProvider"
+            ],
+            "aliases": {
+                "Trendyol": "BahriCanli\\Trendyol\\Facades\\Trendyol"
+            }
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:bahricanli/trendyol-php-api.git"
+        }
+    ]
+}
