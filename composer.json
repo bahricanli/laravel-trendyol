@@ -16,7 +16,7 @@
     "require": {
         "php": ">=7",
         "bahricanli/trendyol-php-api": "1.0.0",
-        "illuminate/support": "8.*"
+        "laravel/framework": "^5|^6|^7|^8"
     },
     "require-dev": {
         "mockery/mockery": "^0.9.5",
